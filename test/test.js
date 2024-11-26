@@ -12,3 +12,9 @@ describe('First two terms', function() {
       assert.strictEqual(main.factorial(1), 1);
     });
 });
+
+describe('Number below zero', function() {
+  it('should return undefined for a number below 0', function() {
+    assert.strictEqual(main.factorial(-2), undefined)
+  })
+})
